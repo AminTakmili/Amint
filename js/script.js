@@ -12,9 +12,6 @@ $.mobile.defaultPageTransition = "flow";
 
 /*----------------------------------*/	
 //alert( $.mobile.activePage.attr('id') );
-$(window).bind("orientationchange",function(){
-	return false;
-});
 
 /*----------------------------------*/		
 
