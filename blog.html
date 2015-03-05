@@ -54,8 +54,10 @@ $( '[blog="true"]' ).bind( "pageinit", '[blog="true"]', function() {
 						 });// end for each
 					},// end function
 					 error: function (xhr, ajaxOptions, thrownError) {
-                            alert(xhr.status);
-                            alert(thrownError);
+						 	$('.loading_img').hide(0);
+                        				$( "#positionWindow" ).popup( "open" );
+							$('#positionWindow p').text("No Internet Access");
+							$('.post_bl').text('No Internet Access');
                           }
 				});// end  ajax
              
@@ -98,8 +100,10 @@ $( '[blog="true"]' ).bind( "pageinit", '[blog="true"]', function() {
 						 });// end for each
 					},// end function
 					 error: function (xhr, ajaxOptions, thrownError) {
-                            alert(xhr.status);
-                            alert(thrownError);
+						 $('.loading_img').hide(0);
+                            $( "#positionWindow" ).popup( "open" );
+							$('#positionWindow p').text("No Internet Access");
+							$('.post_bl').text('No Internet Access');
                           }
 				});// end  ajax
              
